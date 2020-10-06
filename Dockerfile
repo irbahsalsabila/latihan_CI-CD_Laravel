@@ -1,13 +1,13 @@
 # using this awesome prebuild image:
 
-FROM '123majumundur/php-7.1-nginx:cicd'
+FROM 'irbahsalss/php-7.1-nginx:cicd'
 MAINTAINER irbah salsabila <irbah.salsabila93@gmail.com>
 
 #install prestissimo for faster deps instalation
 RUN composer global require hirak/prestissimo
 
 #make directory for hosting the apps
-RUN mkdir/home/app/app
+RUN mkdir /home/app/app
 WORKDIR /home/app/app
 
 #install dependecies
